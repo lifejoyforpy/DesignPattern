@@ -1,3 +1,3 @@
 # DesignPattern
 c#  DesignPattern
-# dotnet-cli dotnet run 
+# dotnet-cli dotnet  run 
