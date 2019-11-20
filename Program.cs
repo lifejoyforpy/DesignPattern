@@ -15,16 +15,19 @@ namespace DesignPattern
             // Mobile _andriod=new AndriodMobile();
             // _apple.Display();
             // _andriod.Display();
-             Book[] books= new Book[]{
-                new Book("计算机"),
-                new Book("英语"),
-                new Book("数学"),
-             };
-             var _bookshelf= new BookShelf(books);
-             foreach(Book item in _bookshelf)
-             {
-                 item.GetName();
-             }
+            //  Book[] books= new Book[]{
+            //     new Book("计算机"),
+            //     new Book("英语"),
+            //     new Book("数学"),
+            //  };
+            //  var _bookshelf= new BookShelf(books);
+            //  foreach(Book item in _bookshelf)
+            //  {
+            //      item.GetName();
+            //  }
+
+            Mobiles a =new AppleAdapter(new Apples());
+            a.Charge();
         }
     }
 }
