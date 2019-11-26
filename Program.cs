@@ -26,8 +26,12 @@ namespace DesignPattern
             //      item.GetName();
             //  }
 
-            Mobiles a =new AppleAdapter(new Apples());
-            a.Charge();
+            // Mobiles a =new AppleAdapter(new Apples());
+            // a.Charge();
+            BuilderManager _manager=new BuilderManager();
+            Builder builder= new MacBuilder();
+            var mac= _manager.Build(builder);
+            mac.ShowSteps();
         }
     }
 }
